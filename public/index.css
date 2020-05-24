@@ -26,4 +26,8 @@ html {
     background-size: cover;
     background-color: rgb(82, 82, 82);
     background-blend-mode: lighten;
-  }
+}
+
+.center-align {
+    text-align: center;
+}
