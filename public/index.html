@@ -35,9 +35,7 @@
       <a class="navbar-brand logo-font" style="color: white; font-size: 35px;">breather</a>
       <ul class="nav navbar-nav navbar-right">
         <li>
-
-          <a class="btn btn-primary" onclick="openAccessibilityModal()" role="button">Additional Features</a>
-          <a class="btn btn-primary" onclick="openIntroModal()" role="button" style="margin-left: 7px;">How to Use</a>
+          <a class="btn btn-primary" onclick="openAboutUsModal()" role="button" style="margin-left: 7px;">About</a>
         </li>
       </ul>
 
@@ -49,6 +47,50 @@
 <br>
 <br>
   <div class="container">
+
+        <!-- Modal -->
+    <!-- Introduction and How to Use Modal -->
+    <div class="modal fade" id="aboutUsModal" tabindex="-1" role="dialog" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <br>
+            <h3 class="center-align logo-font" style="font-size: 40px;"> breather</h3>
+            <br>
+            <p style="text-align: center">
+              Breather is a webapp that predicts whether an xray image of the lungs has indication of COVID-19.
+              Using Tensorflow, we trained our AI to recognize healthy and normal lungs with patients with COVID-19.
+              <br><br>
+              Warning, this is not medical advice
+            </p>
+            <p>
+              To use:
+            </p>
+            <ol>
+              <li>Click on <b>Upload X-ray</b> upload a picture of an x-ray of a pair of lungs</li>
+              <li>Wait for results</li>
+              <li>Your results should show on the probabilties the lung x-ray is healthy or  has COVID-19</li>
+            </ol>
+
+            <br>
+            
+            <div class="custom-control custom-checkbox" style="text-align: center;">
+              <input type="checkbox" class="custom-control-input" id="neverShowCheckbox">
+              <label class="custom-control-label" for="neverShowCheckbox">Don't show this again</label>
+            </div>
+            
+            <div style="text-align: center; margin-top: 5px; padding-left: 10px; padding-right: 10px">
+              <button type="button" class="btn btn-primary btn-secondary" style="margin-top: 7px;" onclick="closeAboutUsModal()">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="row">
       <div class="col-sm-12"></div>
       <h2>test</h2>
@@ -65,6 +107,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
+
+<script src='./index.js'></script>
 
 </body>
 
