@@ -1,0 +1,29 @@
+:root {
+    --b-main: #2CA58D;
+    --b-primary: #FFFDF7;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+
+    background-color: var(--b-primary) !important;
+    border-color: var(--b-primary);
+    color: red;
+}
+
+.navbar-color {
+    background-color: var(--b-main);
+}
+
+.logo-font{
+    font-family: 'Comfortaa', cursive;
+}
+
+html { 
+    background: url(./resources/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgb(82, 82, 82);
+    background-blend-mode: lighten;
+  }
