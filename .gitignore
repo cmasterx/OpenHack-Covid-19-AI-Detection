@@ -133,3 +133,6 @@ dmypy.json
 
 # vscode
 .vscode/
+
+# key files
+config.json
